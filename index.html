@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <meta charset = "utf-8">
+    <meta name = "viewport" content = "width=device-width, initial scale=1.0">
+    <link rel = "stylesheet" href = "style.css">
+    
+    <!-- <link rel="icon" type="image/x-icon" href="favicon.ico"> -->
+
+    <link rel = "stylesheet" href = "css/bootstrap.css">
+    <title>Matttr | Home</title> 
+    
+  </head>
+  <body>
+
+    <nav id = "nav">
+      <div class = "logo"><a class = "active" href = "index.html">Matttr</a></div>
+      <div class = "nav-items">
+        <li><a href = "econ.html">Econ/Finance</a></li>
+        <li><a href = "ir.html">International Relations</a></li>
+        <li><a href = "philo.html">Philosophy</a></li>
+        <li><a href = "movements.html">Social Movements</a></li>
+        <li><a href = "cjs.html">Criminal Justice</a></li>
+      </div>
+    </nav>
+
+    <div class = "about">
+      <div class = "about-heading">
+        A platform powered by <br><span style = "font-weight: 600">
+        artificial intelligence</span> to help <br>
+        you Matttr-load
+        <div class = "about-subtext">
+          We offer condensed transcriptions of arguments on various motions. 
+          Powered by <b>Natural Language Processing</b> to automate transcription.
+        </div>
+        <div class = "suggest">
+          <button class = "suggest-rounds" data-modal="modal1">Suggest Rounds to Transcribe</button>
+
+          <div class = "modal" id = "modal1">
+            <div class = "modal-content">
+              <div class = "modal-header">
+                <button class="modal-close">✕</button>
+                <h2>Have a round/motion you want featured?</h2>
+              </div>
+              <div class = "suggest-form">
+                <form method = "post">
+                  <input type = "text" placeholder = "YouTube link, motion, TabbyCat link, or even specific debater..." id = "message" style = "width: 460px">
+                  <button class = "send">Send</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class = "about-image">
+        <img src = "logo.png">
+      </div>
+    </div>
+
+    <!-- <div class = "contact">
+      <div class = "contact-heading">
+        Feel free to suggest rounds, topics, or motions you want to be featured!
+      </div>
+      <div class = "contact-form">
+        <form method = "post">
+          <textarea id = "suggestion" placeholder = "" cols = 100 rows = 5></textarea> <br>
+          <button class = "btn">Send</button>
+        </form>
+      </div>
+    </div> -->
+
+    <script src = "app.js"></script>
+
+  </body>
+</html>

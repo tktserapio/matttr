@@ -1,0 +1,392 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600");
+
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1}
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  list-style: none;
+  user-select: none;
+  font-family: "Montserrat", sans-serif;
+}
+
+body, html {
+  font-family: "Montserrat", sans-serif;
+  scroll-behavior: smooth;
+}
+
+nav {
+  background: white;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: end;
+  height: 70px;
+  padding: 0 60px;
+}
+
+nav .logo {
+  color: #5375e2;
+  font-size: 25px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+nav .logo a {
+  text-decoration: none;
+  color: #5375e2;
+}
+
+nav .nav-items {
+  display: flex;
+  flex: 1;
+  list-style: none;
+  padding: 0 0 0 40px;
+}
+
+nav .nav-items li {
+  padding-right: 30px;
+}
+
+nav .nav-items li a {
+  color: gray;
+  text-decoration: none;
+  padding-bottom: 10px;
+}
+
+nav .nav-items li .active {
+  color: black;
+  border-bottom: 2px solid #5375e2;
+  width: 100%;
+  border-radius: 1px;
+  transition: 0.5s ease;
+}
+
+nav .nav-items li a:hover {
+  color: black;
+  transition: 0.4s ease;
+}
+
+
+.about {
+  margin-top: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 60px;
+  animation: fadeIn linear 0.3s;
+  gap: 120px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.about-heading {
+  font-size: 30px;
+  color: rgb(84, 84, 84);
+  line-height: 50px;
+  font-weight: 400;
+  /* padding-top: 80px; */
+  width: 460px;
+}
+
+.about-heading .about-subtext {
+  margin-top: 20px;
+  font-size: 17px;
+  line-height: 30px;
+}
+
+.about .about-image img {
+  height: 300px;
+  width: auto;
+  opacity: 90%;
+}
+
+.suggest .suggest-rounds {
+  margin-top: 30px;
+  width: 275px;
+  height: 40px;
+  border-radius: 10px;
+  border: 0;
+  font-size: 15px;
+
+  background-color: #6e8beb;
+  color: white;
+  cursor: pointer;
+  outline: none;
+}
+
+.suggest .modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+  display: none;
+  animation: modal-open .3s;
+}
+
+.suggest .modal-content {
+  background: #fff;
+  margin-top: 100px;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 30px;
+  padding-top: 20px;
+}
+
+.suggest .modal-header {
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.suggest .modal-header h2 {
+  padding-top: 20px;
+}
+
+.suggest .modal-close {
+  position: relative;
+  float: right;
+  font-size: 20px;
+  background: none;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  padding-bottom: 20px;
+}
+
+.suggest .modal-content p {
+  padding: 15px 0;
+}
+
+.suggest-form input {
+  padding: 2px;
+  color:rgb(55, 55, 55);
+}
+
+.suggest-form .send {
+  width: 60px;
+  padding: 3px;
+  border-radius: 3px;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  font-size: 13px;
+  color: white;
+  background-color: #6e8beb;
+}
+
+
+
+
+.row1 {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  gap: 80px;
+  margin-top: 50px;
+  animation: fadeIn linear 0.3s;
+}
+
+.row1 .pic1, .row1 .pic2, .row1 .pic3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.row1 .pic1 img, .row1 .pic2 img, .row1 .pic3 img {
+  width: 269px;
+  height: 210px;
+  border-radius: 10px;
+}
+
+.caption {
+  font-weight: 400;
+  font-size: 15px;
+  width: 280px;
+  text-align: center;
+  line-height: 25px;
+}
+
+.caption a {
+  color: rgb(84, 84, 84);
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.caption a:hover {
+  color: black;
+  transition: 0.4s ease;
+}
+
+.transcription-page {
+  margin-top: 10px;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+
+.transcription-page .speaker-pos {
+  text-align: center;
+  margin-right: 50px;
+}
+
+.transcription-page .speaker-pos a {
+  animation: fadeIn linear 0.3s;
+  text-decoration: none;
+  color: black;
+  margin-right: 50px;
+  font-weight: 500;
+  font-size: 20px;
+  border-bottom: 1.2px solid black;
+}
+
+nav .exit {
+  animation: fadeIn linear 0.3s;
+  margin-top: 10px;
+}
+
+nav .exit a {
+  font-size: 25px;
+  text-decoration: none;
+  color: gray;
+}
+
+nav .exit a:hover {
+  color: black;
+  transition: 0.4s ease;
+}
+
+#speaker1 {
+  margin-top: 40px;
+}
+
+.transcript_image {
+  display: flex;
+  justify-content: center;
+  gap: 70px;
+  align-items: start;
+  padding-top: 20px;
+  animation: fadeIn linear 0.3s;
+  margin-bottom: 20px;
+}
+
+.transcript_image img {
+  width: 500px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.transcript_image img {
+  width: 275px;
+  border-radius: 10px;
+}
+
+.transcript_image .argument {
+  width: 450px;
+  font-size: 15px;
+  font-weight: 300px;
+  text-align: left;
+  line-height: 28px;
+}
+
+.transcript_image .argument .handle {
+  width: 450px;
+  font-size: 15px;
+  font-weight: 500;
+  text-align: left;
+  line-height: 28px;
+}
+
+.transcript_image .argument .reasoning {
+  margin-top: 20px;
+  width: 450px;
+  font-size: 15px;
+  font-weight: 400;
+  text-align: left;
+  line-height: 28px;
+  padding-bottom: 40px;
+}
+
+
+.modal-open {
+  margin-top: 10px;
+  padding: 7px 60px;
+  font-family: "Montserrat", sans-serif;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  background-color: #6e8beb;
+  color: white;
+  border-radius: 8px;
+}
+
+.modal-open button:hover {
+  background-color: #5f7cda;
+  transition: 0.3s ease;
+}
+
+.modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+  display: none;
+  animation: modal-open .3s;
+}
+
+.modal-content {
+  background: #fff;
+  margin-top: 100px;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 8px;
+  padding-top: 20px;
+}
+
+.modal-header {
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.modal-header h2 {
+  padding-top: 20px;
+}
+
+.modal-close {
+  position: relative;
+  float: right;
+  font-size: 20px;
+  background: none;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  padding-bottom: 20px;
+}
+
+.modal-content p {
+  padding: 15px 0;
+}
+
+@keyframes modal-open {
+  from {
+    opacity: 0;
+  } to {
+    opacity: 1;
+  }
+}
