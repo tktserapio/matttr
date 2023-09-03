@@ -31,7 +31,7 @@
         artificial intelligence</span> to help <br>
         you Matttr-load
         <div class = "about-subtext">
-          We offer condensed transcriptions of arguments on various motions. 
+          We offer <b>condensed</b> transcriptions of arguments on various motions. 
           Powered by <b>Natural Language Processing</b> to automate transcription.
         </div>
         <div class = "suggest">
@@ -44,11 +44,29 @@
                 <h2>Have a round/motion you want featured?</h2>
               </div>
               <div class = "suggest-form">
-                <form method = "post">
+                <form onsubmit="sendEmail(); reset(); return false">
+                  <!-- <input type = "email" placeholder = "Your email" id = "email" style = "width: 460px"> -->
                   <input type = "text" placeholder = "YouTube link, motion, TabbyCat link, or even specific debater..." id = "message" style = "width: 460px">
                   <button class = "send">Send</button>
                 </form>
               </div>
+
+              <script src = "https://smtpjs.com/v3/smtp.js"></script>
+
+              <script>
+                function sendEmail() {
+                  Email.send({
+                    SecureToken : "a95e6280-e9f9-436a-bce4-a250842d0522",
+                    To : 'matttr.org@gmail.com',
+                    From : "matttr.org@gmail.com",
+                    Subject : "Transcript Request",
+                    Body : document.getElementById("message").value
+                  }).then(
+                    message => alert(message)
+                  );
+                }
+              </script>
+
             </div>
           </div>
         </div>
