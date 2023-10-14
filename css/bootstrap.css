@@ -74,13 +74,13 @@ nav .nav-items li a:hover {
 
 
 .about {
-  margin-top: 80px;
+  margin-top: 120px;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 0 60px;
   animation: fadeIn linear 0.3s;
-  gap: 120px;
+  gap: 180px;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -120,7 +120,7 @@ nav .nav-items li a:hover {
 }
 
 .suggest .modal {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
@@ -186,7 +186,7 @@ nav .nav-items li a:hover {
 
 
 
-
+/* row 1 */
 .row1 {
   display: flex;
   justify-content: center;
@@ -205,6 +205,31 @@ nav .nav-items li a:hover {
 }
 
 .row1 .pic1 img, .row1 .pic2 img, .row1 .pic3 img {
+  width: 269px;
+  height: 210px;
+  border-radius: 10px;
+}
+
+
+/* row 2 */
+.row2 {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  gap: 80px;
+  margin-top: 80px;
+  animation: fadeIn linear 0.3s;
+}
+
+.row2 .pic1, .row2 .pic2, .row2 .pic3 {
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.row2 .pic1 img, .row2 .pic2 img, .row2 .pic3 img {
   width: 269px;
   height: 210px;
   border-radius: 10px;
@@ -336,7 +361,7 @@ nav .exit a:hover {
 }
 
 .modal {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
