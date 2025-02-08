@@ -1,1 +1,1 @@
-https://tktserapio.github.io/matttr/
+Matttr is a platform that grants debaters around the world condensed versions of transcribed debate speeches. For this, I architected a custom speech-to-text pipeline to automatically transcribe 1300+ minutes of debate speeches using open-source transformer models (Whisper).
